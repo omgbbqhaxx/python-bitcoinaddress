@@ -95,7 +95,7 @@ def validate(bitcoin_address, magicbyte=0):
     except ValueError:
         return False
     # Check magic byte (for other altcoins, fix by Frederico Reiven)
-    bcbytes = (bcbytes,)
+    bcbytes = bcbytes.encode()
     for mb in magicbyte:
         if bcbytes.startswith(chr(int(mb))):
             break
