@@ -1,24 +1,21 @@
 from setuptools import setup
 
+requires = ['']
+
 setup(
-    name="python-bitcoinaddress",
-    version="0.0.1",
-    packages=["python-bitcoinaddress"],
-    description="Python bitcoin address verifier",
-    url="https://github.com/omgbbqhaxx/python-bitcoinaddress/",
-    author="omgbbqhaxx",
+    name='python-bitcoinaddress',
+    version='0.2.2',
+    description="Python bitcoin address validation",
+    license="GPLv3",
+    author="Yasin Aktimur",
     author_email="yasinaktimur@gmail.com",
-    license="MIT",
-    classifiers=[
+    url='https://github.com/omgbbqhaxx/python-bitcoinaddress',
+    keywords='bitcoin address validation',
+    test_suite="tests",
+    install_requires=requires,
+    classifiers = [
         "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6"
-    ],
-    keywords="bitcoin, address",
-    
+        "Programming Language :: Python",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    ]
 )
