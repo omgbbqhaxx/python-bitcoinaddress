@@ -1,33 +1,24 @@
-"""\
-"""
-import os
-from setuptools import setup, find_packages
-
-# Utility function to read the README file.
-# Used for the long_description.  It's nice, because now 1) we have a top level
-# README file and 2) it's easier to type in the README file than to put a raw
-# string in below ...
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
-requires = ['']
+from setuptools import setup
 
 setup(
-    name='python-bitcoinaddress',
-    version='0.2.2',
-    description="Python bitcoin address validation",
-    long_description=read('README.md'),
-    license="GPLv3",
-    author="Yasin Aktimur",
+    name="python-bitcoinaddress",
+    version="0.0.1",
+    packages=["python-bitcoinaddress"],
+    description="Python bitcoin address verifier",
+    url="https://github.com/omgbbqhaxx/python-bitcoinaddress/",
+    author="omgbbqhaxx",
     author_email="yasinaktimur@gmail.com",
-    url='https://github.com/omgbbqhaxx/python-bitcoinaddress',
-    keywords='bitcoin address validation',
-    packages=find_packages(),
-    test_suite="tests",
-    install_requires=requires,
-    classifiers = [
+    license="MIT",
+    classifiers=[
         "Development Status :: 4 - Beta",
-        "Programming Language :: Python",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
-    ]
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6"
+    ],
+    keywords="bitcoin, address",
+    
 )
